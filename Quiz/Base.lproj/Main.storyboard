@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="And-E6-TuH">
+                                <rect key="frame" x="175" y="91" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zub-v3-bkH">
+                                <rect key="frame" x="175" y="323" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQZ-Ov-pV0">
+                                <rect key="frame" x="141" y="352" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXz-cT-4xv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-Mq-IST">
+                                <rect key="frame" x="138" y="120" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgn-M2-zoF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next question label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGU-rI-ZaR">
+                                <rect key="frame" x="114" y="91" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="And-E6-TuH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5XO-3K-Iz8"/>
+                            <constraint firstItem="And-E6-TuH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="8iY-8l-6P9"/>
+                            <constraint firstItem="jGU-rI-ZaR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CVA-pS-2hn"/>
+                            <constraint firstItem="zub-v3-bkH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FFo-wj-f24"/>
+                            <constraint firstItem="x1u-Mq-IST" firstAttribute="top" secondItem="And-E6-TuH" secondAttribute="bottom" constant="8" id="XVl-6k-Rvx"/>
+                            <constraint firstItem="zub-v3-bkH" firstAttribute="top" secondItem="x1u-Mq-IST" secondAttribute="bottom" constant="173" id="i0y-Iw-BYp"/>
+                            <constraint firstItem="x1u-Mq-IST" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uEa-7e-Rg7"/>
+                            <constraint firstItem="cQZ-Ov-pV0" firstAttribute="top" secondItem="zub-v3-bkH" secondAttribute="bottom" constant="8" id="uOQ-o5-HdT"/>
+                            <constraint firstItem="jGU-rI-ZaR" firstAttribute="top" secondItem="And-E6-TuH" secondAttribute="top" id="xXh-XF-4r3"/>
+                            <constraint firstItem="cQZ-Ov-pV0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xf3-MD-fdA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="zub-v3-bkH" id="amN-2s-Vt7"/>
+                        <outlet property="currentQuestionLabel" destination="And-E6-TuH" id="e7w-wc-cbh"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="5XO-3K-Iz8" id="aIJ-pw-aQw"/>
+                        <outlet property="nextQuestionLabel" destination="jGU-rI-ZaR" id="O4x-a0-wQO"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="CVA-pS-2hn" id="VGb-Kq-s8d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
